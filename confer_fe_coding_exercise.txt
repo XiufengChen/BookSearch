@@ -1,0 +1,27 @@
+App to Display Book info
+------------------------
+Develop a single page app. The app should do the following:
+
+- have a search box and a search button next to it
+- user should be able to enter a bibkey (example - ISBN:0451526538) in the search box
+- invoke /find api in node.js with bibkey passed in the request
+- /find API in node should invoke following URL with the bibkey from request
+	-- https://openlibrary.org/api/books?bibkeys=ISBN:0385472579&format=json&jscmd=data
+- node.js should return following info for the book back to browser
+	-- number_of_pages
+	-- title
+	-- subtitle
+	-- url
+- display book info (above 4 items) in a table below the search box
+	-- | Title | Sub Title | Pages | URL |
+
+Bonus
+-----
+- have the search box take in a comma separated list of bibkeys
+- /find api in node.js should be able to pass that list to the API as follows
+	-- https://openlibrary.org/api/books?bibkeys=ISBN:0385472579,LCCN:62019420&format=json&jscmd=data
+- /find api should return info for all books to the browser
+- display book info on the page in a table below the search box with one book per row
+
+Backend should be done using node.js and front end can be done using either Backbone.js or Angular.js.
+Do not spend time on styling the page and making it look pretty.
