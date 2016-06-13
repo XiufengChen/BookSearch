@@ -1,5 +1,5 @@
 {
-  "name": "ExpressApp",
+  "name": "BookSearch",
   "version": "0.0.1",
   "description": "A Node.js App using express",
   "dependencies": {
